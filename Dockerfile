@@ -1,7 +1,4 @@
 FROM n8nio/n8n:latest
-
 WORKDIR /home/node
-
 EXPOSE 5678
-
-CMD ["/usr/local/bin/n8n", "start"]
+CMD ["tini", "--", "n8n", "start"]
