@@ -7,5 +7,5 @@ WORKDIR /home/node
 # Expose port
 EXPOSE 5678
 
-# Start n8n via Node
-CMD ["sh", "-c", "n8n start"]
+# Start n8n directly
+CMD ["n8n", "start"]
